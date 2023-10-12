@@ -1,44 +1,48 @@
 import React from "react";
 import { About } from "../styles";
 import styled from "styled-components";
+import Toggle from "./Toggle";
 
 const FaqSection = () => {
+
+    
+
     return (
         <>
         <Faq>
             <h2>Any questions <span>FAQ</span></h2>
+            <Toggle title='How do i start?' >
             <div className="question">
-                <h4>How do i start?</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus voluptatum in alias iusto rem impedit rerum quo repellendus maiores inventore totam, obcaecati numquam commodi molestias corrupti eveniet aliquam! Quisquam!</p>
                 </div>
-                <div className="faq-line"></div>
             </div>
+            </Toggle>
+            <Toggle title='Daily Schedule' >
             <div className="question">
-                <h4>Daily Schedule?</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus voluptatum in alias iusto rem impedit rerum quo repellendus maiores inventore totam, obcaecati numquam commodi molestias corrupti eveniet aliquam! Quisquam!</p>
                 </div>
-                <div className="faq-line"></div>
             </div>
+            </Toggle>
+            <Toggle title='Different payment methods' >
             <div className="question">
-                <h4>Different payment methods</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus voluptatum in alias iusto rem impedit rerum quo repellendus maiores inventore totam, obcaecati numquam commodi molestias corrupti eveniet aliquam! Quisquam!</p>
                 </div>
-                <div className="faq-line"></div>
             </div>
+            </Toggle>
+            <Toggle title='What products do you offer?' >
             <div className="question">
-                <h4>What products do you offer?</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus voluptatum in alias iusto rem impedit rerum quo repellendus maiores inventore totam, obcaecati numquam commodi molestias corrupti eveniet aliquam! Quisquam!</p>
                 </div>
-                <div className="faq-line"></div>
             </div>
+            </Toggle>
         </Faq>
         </>
     )
