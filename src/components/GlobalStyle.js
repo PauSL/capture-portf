@@ -14,6 +14,15 @@ body {
     /*font-family: 'Lobster', sans-serif;*/
 }
 
+html {
+    @media screen  and (max-width: 1700px) {
+        font-size: 75%;
+    }
+    @media screen  and (max-width: 1300px) {
+        font-size: 80%;
+    }
+}
+
 button {
     font-weight: bold;
     font-size: 1.1rem;

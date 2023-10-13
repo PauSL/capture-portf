@@ -11,6 +11,7 @@ import Nav from './components/Nav';
 import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
 import MovieDetail from './pages/MovieDetail';
+import ScrollTop from "./components/ScrollTop";
 
 //Animation//
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <ScrollTop />
       <Nav />
       <AnimatePresence mode='wait' >
       <Routes location={location} key={location.pathname} >   
